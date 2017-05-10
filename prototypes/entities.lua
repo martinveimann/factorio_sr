@@ -67,25 +67,35 @@ data:extend(
       }
     },
     working_visualisations =
-    {
-      {
-        north_position = {1.03125, -1.55},
-        east_position = {-1.65625, -1.3},
-        south_position = {-1.875, -2.0},
-        west_position = {1.8437, -1.2},
-        animation =
-        {
-          filename = "__base__/graphics/entity/oil-refinery/oil-refinery-fire.png",
-          frame_count = 29,
-          width = 16,
-          height = 35,
-          scale = 1.5,
-          shift = {0, -0.5625},
-          run_mode="backward"
-        },
-        light = {intensity = 0.4, size = 6}
-      }
-    },
+	{
+		{
+			north_position = util.by_pixel(34, -65),
+			east_position = util.by_pixel(-52, -61),
+			south_position = util.by_pixel(-59, -82),
+			west_position = util.by_pixel(57, -58),
+			animation =
+			{
+				filename = "__base__/graphics/entity/oil-refinery/oil-refinery-fire.png",
+				line_length = 10,
+				width = 20,
+				height = 40,
+				frame_count = 60,
+				animation_speed = 0.75,
+				shift = util.by_pixel(0, -14),
+				hr_version = {
+					filename = "__base__/graphics/entity/oil-refinery/hr-oil-refinery-fire.png",
+					line_length = 10,
+					width = 40,
+					height = 81,
+					frame_count = 60,
+					animation_speed = 0.75,
+					scale = 0.5,
+					shift = util.by_pixel(0, -14.25),
+				},
+			},
+			light = {intensity = 0.4, size = 6, color = {r = 1.0, g = 1.0, b = 1.0}}
+		}
+	},
     vehicle_impact_sound =  { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound =
     {
