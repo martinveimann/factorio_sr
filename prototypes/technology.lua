@@ -5,7 +5,7 @@ data:extend(
     name = "specialized-refineries",
     icon = SR_G_TECH,
     upgrade = "true",
-    prerequisites = {"oil-processing"},
+    prerequisites = {"oil-processing","advanced-circuit"},
     effects =
     {
       {
