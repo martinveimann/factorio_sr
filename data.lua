@@ -7,14 +7,7 @@ require("prototypes.recipe")
 require("prototypes.technology")
 data.raw["assembling-machine"]["oil-refinery"].fast_replaceable_group = "assembling-machine"
 
--- Allow productivity modules in those recipes
-for i, module in pairs(data.raw.module) do
-  if module.effect.productivity then
-		table.insert(module.limitation, "specialized-refining-petroleum");
-		table.insert(module.limitation, "specialized-refining-light-oil");
-		table.insert(module.limitation, "specialized-refining-heavy-oil");
-		if not module.limitation_message_key then
-    	module.limitation_message_key = "production-module-usable-only-on-intermediates"
-    end
-  end
-end
+-- Allow productivity modules in the specialized refineries by adding the recipies as intermediate products
+table.insert(data.raw.module["productivity-module"].limitation, "specialized-refining-petroleum")
+table.insert(data.raw.module["productivity-module"].limitation, "specialized-refining-light-oil")
+table.insert(data.raw.module["productivity-module"].limitation, "specialized-refining-heavy-oil")
