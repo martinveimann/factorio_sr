@@ -4,6 +4,7 @@ data:extend(
     type = "assembling-machine",
     name = "specialized-refinery",
     icon = SR_G_ENTITY_ICON,
+    icon_size = 32,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = {mining_time = 1, result = "specialized-refinery"},
     max_health = 550,

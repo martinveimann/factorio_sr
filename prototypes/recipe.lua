@@ -10,6 +10,7 @@ data:extend(
     results= SR_R_PETROLEUM_OUT,
     main_product= "",
     icon = "__base__/graphics/icons/fluid/petroleum-gas.png",
+    icon_size = 32,
     subgroup="fluid-recipes",
     order = "b[advanced-oil-processing]-a[specialized-refining-petroleum]"
   },
@@ -23,6 +24,7 @@ data:extend(
     results= SR_R_LIGHTOIL_OUT,
     main_product= "",
     icon = "__base__/graphics/icons/fluid/light-oil.png",
+    icon_size = 32,
     subgroup="fluid-recipes",
     order = "b[advanced-oil-processing]-a[specialized-refining-light-oil]"
   },
@@ -36,6 +38,7 @@ data:extend(
     results = SR_R_HEAVYOIL_OUT,
     main_product= "",
     icon = "__base__/graphics/icons/fluid/heavy-oil.png",
+    icon_size = 32,
     subgroup="fluid-recipes",
     order = "b[advanced-oil-processing]-a[specialized-refining-heavy-oil]"
   },

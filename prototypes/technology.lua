@@ -4,6 +4,7 @@ data:extend(
     type = "technology",
     name = "specialized-refineries",
     icon = SR_G_TECH,
+    icon_size = 128,
     upgrade = "true",
     prerequisites = {"oil-processing","advanced-electronics"},
     effects =
